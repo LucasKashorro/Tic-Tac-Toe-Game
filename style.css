@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+/* font-family: 'Nunito', sans-serif; */
+
+body {
+    margin: 0;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #1A1423;
+    overflow: hidden;
+}
+
+#container {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    justify-content: space-between;
+    align-content: space-between;
+    grid-template-columns: 100px 100px 100px;
+}
+
+.btns {
+    width: 120px;
+    height: 120px;
+    border: none;
+    background-color: #3D314A;
+    border-radius: 10px;
+    box-shadow: 0 5px 1px 1px #0e0b13;
+    transition: 0.2s;
+}
+
+.btns:hover {
+    cursor: pointer;
+    transform: translate(0, 5px);
+    box-shadow: none;
+    transition: 0.2s;
+}
+
+.turn-container {
+    width: 100px;
+    box-shadow: 0 3px 1px 1px #0e0b13;
+    transform: translate(10px, -16px);
+    text-align: center;
+    color: rgb(167, 167, 167);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    background-color: #3D314A;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.team {
+    color: rgb(184, 184, 184);
+    font-weight: bold;
+    font-size: 25px;
+    transform: translate(0, -1px);
+}
+
+.turn-container p{
+    margin: 5px;
+}
+
+.turn-container .normal-text {
+    font-size: 18px;
+}
+
+.x-class {
+    color: #539987;
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.o-class {
+    color: #DA4167;
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.winned-screen {
+    width: 100vh;
+    height: 100vh;
+}
+
+#winner-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.061);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#winned-container {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    padding: 100px 0;
+    top: 45%;
+    left: 0;
+    background-color: #1A1423;
+    z-index: 2;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.2);
+    border: 1px solid #02080a5e;
+    color: white;
+    font-family:  'Roboto', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    display: none;
+}
